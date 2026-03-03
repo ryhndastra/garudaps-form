@@ -82,7 +82,7 @@ export default function RecruitmentForm() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "KEY",
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
           subject: `Staff Application - ${form.growId}`,
           from_name: "GarudaPS System",
           ...form,
