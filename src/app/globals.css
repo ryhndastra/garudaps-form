@@ -1,62 +1,7 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --color-bg-dark: #030303;
-    --color-bg-card: #080808;
-    --color-primary: #f97316;
-    --color-secondary: #ea580c;
-  }
-
-  body {
-    background-color: var(--color-bg-dark);
-    color: #ffffff;
-    font-family:
-      ui-sans-serif,
-      system-ui,
-      -apple-system,
-      BlinkMacSystemFont,
-      "Segoe UI",
-      Roboto,
-      "Helvetica Neue",
-      Arial,
-      sans-serif;
-    @apply antialiased overflow-x-hidden;
-  }
-}
-
-@layer utilities {
-  .shadow-game {
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.7);
-  }
-
-  .focus-game:focus {
-    @apply border-primary! ring-4! ring-primary/20!;
-    box-shadow: 0 0 30px rgba(249, 115, 22, 0.3) !important;
-  }
-
-  @keyframes gradient-text {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  .animate-gradient-text {
-    animation: gradient-text 4s ease infinite;
-    background-size: 200% auto;
-  }
-
-  @keyframes shine {
-    100% {
-      left: 125%;
-    }
-  }
-  .animate-shine {
-    animation: shine 1s ease-in-out infinite;
-  }
+body {
+  background-color: #050505;
+  color: #ffffff;
+  overflow-x: hidden;
 }
